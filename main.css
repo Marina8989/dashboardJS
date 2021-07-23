@@ -113,6 +113,7 @@ body{
 .dashboard label{
    font-size: 35px;
    color: grey;
+   margin-top: 1.5rem;
 }
 .inputDiv{
     display: flex;
@@ -134,4 +135,116 @@ body{
     position: absolute;
     top: 2.1rem;
     left: 32rem;
+}
+
+
+
+
+
+/* media queries */
+@media (min-width: 540px) {
+  .inputDiv{
+    display: flex;
+    border: 1px solid rgb(190, 190, 190);
+    padding: .4rem .4rem;
+    margin-left: 5%;
+    border-radius: 5px;
+  }
+  .inputDiv input{
+    padding:.3rem 2rem;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgb(216, 215, 215);
+    position: relative;
+}
+  .nav{
+      width: 100vw;
+  }
+  .dashboard label{
+   font-size: 20px;
+   color: grey;
+   margin-top: 1.5rem;
+ }
+}
+
+@media (min-width: 680px) {
+  .inputDiv{
+    display: flex;
+    border: 1px solid rgb(190, 190, 190);
+    padding: .4rem .7rem;
+    margin-left: 5%;
+    border-radius: 5px;
+  }
+  .inputDiv input{
+    padding:.5rem 4rem;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgb(216, 215, 215);
+    position: relative;
+}
+  .nav{
+      width: 100vw;
+  }
+  .dashboard label{
+   font-size: 25px;
+   color: grey;
+   margin-top: 1.5rem;
+ }
+}
+
+@media (min-width: 780px) {
+  .inputDiv{
+    display: flex;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 1rem .5rem;
+    margin-left: 5%;
+    border-radius: 5px;
+  }
+  .nav{
+      width: 100vw;
+  }
+  .dashboard label{
+   font-size: 30px;
+   color: grey;
+   margin-top: 1.5rem;
+ }
+}
+
+@media (min-width: 880px) {
+  .inputDiv{
+    display: flex;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 1.7rem 4rem;
+    margin-left: 5%;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .inputDiv{
+    display: flex;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 1.7rem 8rem;
+    margin-left: 5%;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .inputDiv{
+    display: flex;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 1.7rem 10rem;
+    margin-left: 5%;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .inputDiv{
+    display: flex;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 1.7rem 14rem;
+    margin-left: 5%;
+    border-radius: 5px;
+  }
 }
