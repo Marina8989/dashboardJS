@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background: rgb(65, 43, 105);
+    width: 100%;
+    height: 7rem;
+    box-shadow: 3px 3px 7px grey;
+    text-align: center;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding: 2.3rem 3rem;
+}
+.logoApp{
+    font-weight: 200;
+}
+.trademark{
+    font-size: 14px;
+    font-weight: 200;
+}
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.navigation img{
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+}

@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/74510c919c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Desktop</title>
 </head>
+
 <body>
+    <div class="container">
+       <div class="nav">
+           <div class="logo">
+               <h1>Your<span class='logoApp'>App</span><sup class='trademark'>&#8482</sup></h1>
+           </div>
+           <div class="navigation">
+                <i class="far fa-bell"></i>
+                <div class="vertical"></div>
+                <img src="pic.jpg" alt="image of the account">
+                <h4>Will Smith</h4>
+           </div>
+       </div>
+
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+
+    </div>
+
     
-    <script src="main.js"></script>
+
+
+     <!-- <script src="main.js"></script> -->
+     <!-- <script>
+        let myChart = document.getElementById('myChart').getContext('2d');
+        let newChart = new Chart(myChart, {
+            type: 'bar',
+            data: {
+                labels: ['Boston', 'Lowell', 'Cambridge'],
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [65, 59, 80],
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                }]
+            }
+        })
+    </script> -->
 </body>
 </html>
