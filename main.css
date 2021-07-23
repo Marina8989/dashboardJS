@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    position: relative;
+}
+
 .nav{
     background: rgb(66, 63, 119);
     width: 100%;
@@ -43,8 +47,8 @@
     text-align: center;
 }
 .navigation img{
-    width: 65px;
-    height: 60px;
+    width: 55px;
+    height: 50px;
     border-radius: 50%;
     margin: 0 2rem;
 }
@@ -60,13 +64,14 @@
    font-weight: 200;
 }
 .sideNav{
-    width: 9rem;
+    width: 7rem;
     height: 100vh;
     background:rgba(43, 53, 109, .8);
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    position: fixed;
 }
 .sideNav i{
     margin: 2.7rem 0;
@@ -93,4 +98,40 @@
     border: none;
     box-shadow: 7px 7px 8px greenyellow;
     transition: all .5s ease;
+}
+.main{
+    position: absolute;
+    top: 7rem;
+    left: 7rem;
+}
+.dashboard{
+    position: absolute;
+    display: flex;
+    top: 1.7rem;
+    left: 5rem;
+}
+.dashboard label{
+   font-size: 35px;
+   color: grey;
+}
+.inputDiv{
+    display: flex;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 1.7rem 2rem;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+.inputDiv input{
+    padding:.5rem 6rem;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgb(216, 215, 215);
+    position: relative;
+}
+.inputDiv i{
+    color: rgb(139, 139, 139);
+    font-size: 22px;
+    position: absolute;
+    top: 2.1rem;
+    left: 32rem;
 }
