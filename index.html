@@ -12,6 +12,7 @@
 
 <body>
     <div class="container">
+        <!-- navigation start -->
        <div class="nav">
            <div class="logo">
                <h1>Your<span class='logoApp'>App</span><sup class='trademark'>&#8482</sup></h1>
@@ -23,6 +24,28 @@
                 <h4>Will Smith</h4>
            </div>
        </div>
+       <!-- navigation end -->
+
+       <!-- side nav start -->
+         <div class="sideNav">
+            <div class="sideDiv"> 
+                <i class="far fa-list-alt"></i>
+                <h3 class='active'>dashboard</h3>
+            </div>
+            <div class="sideDiv">
+                <i class="fas fa-user-friends"></i>
+                <h3 class='active'>members</h3>
+            </div>
+            <div class="sideDiv">
+                <i class="fas fa-signal"></i>
+                <h3 class='active'>visits</h3>
+            </div>
+            <div class="sideDiv">
+                <i class="fas fa-chart-line"></i>
+                <h3 class='active'>settings</h3>
+            </div>
+         </div>
+       <!-- side nav end -->
 
         <div>
             <canvas id="myChart"></canvas>
@@ -33,7 +56,7 @@
     
 
 
-     <!-- <script src="main.js"></script> -->
+     <script src="main.js"></script>
      <!-- <script>
         let myChart = document.getElementById('myChart').getContext('2d');
         let newChart = new Chart(myChart, {
