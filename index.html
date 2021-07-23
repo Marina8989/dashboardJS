@@ -46,20 +46,24 @@
             </div>
          </div>
        <!-- side nav end -->
-
+     <!-- main start -->
        <main class='main'>
+           <!-- input start -->
            <div class="dashboard">
                <label for="dashboard">Dashboard</label>
                <div class="inputDiv">
                  <input type='text' name="dashboard" id="dashoard"/><i class="fas fa-search"></i>
                </div>
            </div>
-       </main>
+        <!-- input end -->
 
+        <!-- chart start -->
         <div>
             <canvas id="myChart"></canvas>
         </div>
-
+        <!-- chart end -->
+       </main>
+      <!-- main end -->
     </div>
 
     
@@ -67,19 +71,20 @@
 
      <script src="main.js"></script>
      <!-- <script>
-        let myChart = document.getElementById('myChart').getContext('2d');
-        let newChart = new Chart(myChart, {
-            type: 'bar',
-            data: {
-                labels: ['Boston', 'Lowell', 'Cambridge'],
-                datasets: [{
-                    label: 'My First Dataset',
-                    data: [65, 59, 80],
-                    borderColor: 'rgb(75, 192, 192)',
-                    tension: 0.1
-                }]
-            }
-        })
+        // let myChart = document.getElementById('myChart').getContext('2d');
+        // let newChart = new Chart(myChart, {
+        //     type: 'line',
+        //     data: {
+        //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        //         datasets: [{
+        //             label: 'TRAFFIC',
+        //             data: [2800, 2825, 2850, 2875, 2900, 2925, 2950, 2975, 3000],
+        //             borderColor: ['rgb(75, 192, 192)', 'rgb(55, 134, 164)', 'rgb(125, 92, 92)', 'rgb(84, 25, 183)', 'rgb(75, 36, 192)', 'rgb(92, 92, 125)', 'rgb(50, 112, 142)'],
+        //             tension: 0.1
+        //         }],
+   
+        //     }
+        // })
     </script> -->
 </body>
 </html>
