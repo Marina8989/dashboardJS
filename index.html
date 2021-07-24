@@ -59,7 +59,7 @@
 
         <!-- chart start -->
         <div>
-            <canvas id="myChart"></canvas>
+            <canvas id="myChart" width="750" height="550" ></canvas>
         </div>
         <!-- chart end -->
        </main>
@@ -69,22 +69,46 @@
     
 
 
-     <script src="main.js"></script>
-     <!-- <script>
-        // let myChart = document.getElementById('myChart').getContext('2d');
-        // let newChart = new Chart(myChart, {
-        //     type: 'line',
-        //     data: {
-        //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        //         datasets: [{
-        //             label: 'TRAFFIC',
-        //             data: [2800, 2825, 2850, 2875, 2900, 2925, 2950, 2975, 3000],
-        //             borderColor: ['rgb(75, 192, 192)', 'rgb(55, 134, 164)', 'rgb(125, 92, 92)', 'rgb(84, 25, 183)', 'rgb(75, 36, 192)', 'rgb(92, 92, 125)', 'rgb(50, 112, 142)'],
-        //             tension: 0.1
-        //         }],
-   
-        //     }
-        // })
-    </script> -->
+     
+     
+       
+    <script>
+        var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: 'Traffic',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script src="main.js"></script>
 </body>
 </html>
