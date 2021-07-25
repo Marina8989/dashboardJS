@@ -2,7 +2,6 @@ const sideNav = document.querySelector('.sideNav');
 const iconsSideNav = Array.from(document.getElementsByClassName('sideDiv'));
 
 
-
 iconsSideNav.forEach(item => {
     item.addEventListener('mouseenter', () => {
         item.children[1].style.display = 'block';
@@ -14,17 +13,38 @@ iconsSideNav.forEach(item => {
 
 
 
-let myChart = document.getElementById('myChart').getContext('2d');
-        let newChart = new Chart(myChart, {
+var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                 datasets: [{
-                    label: 'TRAFFIC',
-                    data: [2800, 2825, 2850, 2875, 2900, 2925, 2950, 2975, 3000],
-                    borderColor: 'rgb(75, 192, 192)',
-                    tension: 0.1
-                }],
-                
+                    label: 'Traffic',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
             }
-        })
+        });

@@ -136,7 +136,12 @@ body{
     top: 2.1rem;
     left: 32rem;
 }
- 
+ .chart1{
+   position: absolute;
+   top: 10rem;
+   left: 2rem;
+   width: 85vw;
+ }
 
 
 
