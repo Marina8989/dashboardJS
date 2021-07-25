@@ -72,6 +72,10 @@ body{
     align-items: center;
     cursor: pointer;
     position: fixed;
+    top: 0;
+    left:0;
+    z-index: -2;
+    margin: 6rem 0;
 }
 .sideNav i{
     margin: 2.7rem 0;
@@ -144,7 +148,12 @@ body{
  }
 
 
-
+.charts{
+  position: absolute;
+  top: 40rem;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
 
